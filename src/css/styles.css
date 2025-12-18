@@ -1061,7 +1061,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Контейнер, который мы будем "замораживать" (пин) */
 .tools-horizontal-container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden; /* Важно: чтобы не было горизонтальной полосы прокрутки */
   position: relative;
   display: flex;
