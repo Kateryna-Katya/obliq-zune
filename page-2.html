@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/obliq-zune/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/obliq-zune/assets/styles-CbY6Ofva.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          Obliq<span class="logo__accent">-Zune</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="./#hero" class="nav__link active">Главная</a></li>
+              <li class="nav__item"><a href="./#strategy" class="nav__link">Стратегия</a></li>
+              <li class="nav__item"><a href="./#mentoring" class="nav__link">Менторинг</a></li>
+              <li class="nav__item"><a href="./#tools" class="nav__link">Инструменты</a></li>
+              <li class="nav__item"><a href="./#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="./#blog" class="nav__link">Блог</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--header-mobile">Начать сейчас</a>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="burger" aria-label="Открыть меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+          </button>
+      </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -38,20 +45,59 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__col">
+          <a href="/" class="logo logo--footer">
+              Obliq<span class="logo__accent">-Zune</span>
+          </a>
+          <p class="footer__desc">
+              Платформа года для тех, кто хочет построить карьеру, которая работает на вас. Инновационная технология роста.
+          </p>
+          <nav class="footer__nav">
+              <a href="#strategy" class="footer__link">Стратегия</a>
+              <a href="#innovations" class="footer__link">Инновации</a>
+              <a href="#blog" class="footer__link">Блог</a>
+          </nav>
+      </div>
+
+      <div class="footer__col footer__col--info">
+          <div class="footer__group">
+              <h3 class="footer__title">Юридическая информация</h3>
+              <ul class="footer__legal">
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+<li><a href="cookies.html">Политика использования файлов cookie</a></li>
+<li><a href="terms.html">Условия использования</a></li>
+<li><a href="return.html">Политика возврата</a></li>
+<li><a href="disclaimer.html">Отказ от ответственности</a></li>
+<li><a href="personal-data-policy.html">Политика обработки персональных данных</a></li>
+
+              </ul>
+          </div>
+
+          <div class="footer__group">
+              <h3 class="footer__title">Контакты</h3>
+              <address class="footer__contacts">
+                  <p class="footer__contact-item">
+                      <i data-lucide="map-pin"></i>
+                      45 Oxford Street, London W1D 2DZ, UK
+                  </p>
+                  <p class="footer__contact-item">
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+442079460123">+44 20 7946 0123</a>
+                  </p>
+                  <p class="footer__contact-item">
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@obliq-zune.org">hello@obliq-zune.org</a>
+                  </p>
+              </address>
+          </div>
+      </div>
+  </div>
+  <div class="footer__bottom">
+      <div class="container">
+          <p>&copy; 2025 Obliq-Zune. All rights reserved.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>

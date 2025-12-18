@@ -1,56 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/obliq-zune/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obliq-Zune | Карьерный апгрейд и инновации</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/obliq-zune/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/obliq-zune/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/obliq-zune/assets/styles-CbY6Ofva.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          Obliq<span class="logo__accent">-Zune</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="./#hero" class="nav__link active">Главная</a></li>
+              <li class="nav__item"><a href="./#strategy" class="nav__link">Стратегия</a></li>
+              <li class="nav__item"><a href="./#mentoring" class="nav__link">Менторинг</a></li>
+              <li class="nav__item"><a href="./#tools" class="nav__link">Инструменты</a></li>
+              <li class="nav__item"><a href="./#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="./#blog" class="nav__link">Блог</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--header-mobile">Начать сейчас</a>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="burger" aria-label="Открыть меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__bg">
+      <img src="/obliq-zune/assets/one-Cc5yZ18K.jpg" alt="Abstract Technology Background" data-speed="0.8">
+  </div>
+  <div class="container hero__container">
+      <div class="hero__content">
+          <h1 class="hero__title reveal-text">Технология нового<br/> поколения для вашего<br/> карьерного роста</h1>
+          <p class="hero__subtitle fade-in">Воплотите мечты в реальность с экспертной поддержкой. Передовая цифровая инфраструктура, которая работает на вас. Платформа уже доступна в Европе.</p>
+          <div class="hero__actions fade-in">
+              <a href="#contact" class="btn btn--primary btn--lg">Начать сейчас</a>
+              <a href="#strategy" class="btn btn--outline">Узнать больше</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section strategy" id="strategy">
+  <div class="container strategy__container">
+      <div class="strategy__content" data-lag=".2">
+          <h2 class="section-title split-text">Переосмыслите подход к развитию</h2>
+          <p class="section-text">
+              Мы предлагаем не просто консультации, а полноценную стратегию роста на базе инноваций. Это решения, которые меняют правила игры в вашей индустрии.
+          </p>
+          <ul class="strategy__list">
+              <li class="strategy__item">
+                  <i data-lucide="check-circle-2" class="strategy__icon"></i>
+                  <p>Методологии, доказавшие эффективность на практике.</p>
+              </li>
+              <li class="strategy__item">
+                  <i data-lucide="trending-up" class="strategy__icon"></i>
+                  <p>Пошаговый путь, понятный каждому, для быстрого старта.</p>
+              </li>
+              <li class="strategy__item">
+                  <i data-lucide="shield-check" class="strategy__icon"></i>
+                  <p>Проверенный партнер для построения долгосрочной карьеры.</p>
+              </li>
+          </ul>
+      </div>
+      <div class="strategy__image reveal-image">
+          <img src="/obliq-zune/assets/two-RZ09ouz-.jpg" alt="Стратегия карьерного роста">
+      </div>
+  </div>
+</section>
+
+<section class="section mentoring" id="mentoring">
+  <div class="container">
+      <div class="section-header text-center">
+          <h2 class="section-title split-text">Экспертная поддержка на всех этапах</h2>
+          <p class="section-text mx-auto">Откройте новые возможности с платформой года. Мы обеспечиваем удобную адаптацию без сложностей.</p>
+      </div>
+
+      <div class="grid-3 mentoring__grid">
+          <div class="card fade-up">
+              <div class="card__icon-box">
+                  <i data-lucide="zap"></i>
+              </div>
+              <h3 class="card__title">Быстрый и лёгкий старт</h3>
+              <p class="card__text">Подключение занимает 2 минуты. Легко разобраться без опыта благодаря интуитивному интерфейсу.</p>
+          </div>
+          <div class="card fade-up" data-delay="0.2">
+              <div class="card__icon-box">
+                  <i data-lucide="target"></i>
+              </div>
+              <h3 class="card__title">Персональная стратегия</h3>
+              <p class="card__text">Расширьте горизонты проекта с индивидуальным планом развития, построенным на ваших целях.</p>
+          </div>
+          <div class="card fade-up" data-delay="0.4">
+              <div class="card__icon-box">
+                  <i data-lucide="users"></i>
+              </div>
+              <h3 class="card__title">Сообщество экспертов</h3>
+              <p class="card__text">Получите доступ к закрытому комьюнити для обмена опытом и нетворкинга.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section tools-wrapper" id="tools">
+  <div class="container text-center mb-5">
+      <h2 class="section-title split-text">AI-инструменты для реальных задач</h2>
+      <p class="section-text mx-auto">Инновационная технология, которая работает на вас. Оцените перспективы проекта с нашими инструментами.</p>
+  </div>
+
+  <div class="tools-horizontal-container">
+       <div class="tools-track">
+          <div class="tool-card">
+              <div class="tool-card__image">
+                  <img src="/obliq-zune/assets/six-CFekhSiy.jpg" alt="AI Аналитика">
+              </div>
+              <div class="tool-card__content">
+                  <h3>Predictive Career AI</h3>
+                  <p>Прогнозирование карьерных треков на основе больших данных.</p>
+              </div>
+          </div>
+          <div class="tool-card">
+              <div class="tool-card__image">
+                  <img src="/obliq-zune/assets/three-_bD2oUim.jpg" alt="Smart Matching">
+              </div>
+              <div class="tool-card__content">
+                  <h3>Talent Match Engine</h3>
+                  <p>Алгоритмы подбора идеальных менторов и проектов.</p>
+              </div>
+          </div>
+          <div class="tool-card">
+              <div class="tool-card__image">
+                  <img src="/obliq-zune/assets/four-DxPyhG7b.jpg" alt="Skill Gap Analysis">
+              </div>
+              <div class="tool-card__content">
+                  <h3>Skill Gap Analyzer</h3>
+                  <p>Автоматический анализ недостающих навыков для желаемой позиции.</p>
+              </div>
+          </div>
+          <div class="tool-card">
+              <div class="tool-card__image">
+                  <img src="/obliq-zune/assets/five-C8LM_WF1.jpg" alt="Market Insights">
+              </div>
+              <div class="tool-card__content">
+                  <h3>Real-time Market Insights</h3>
+                  <p>Живая статистика рынка труда в Великобритании и Европе.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section banner" id="innovations">
+  <div class="container banner__container reveal-image">
+       <div class="banner__content">
+           <h2>Постройте карьеру, которая работает на вас</h2>
+           <p>Программа пассивного дохода и стратегии роста на базе инноваций уже доступны.</p>
+       </div>
+       <div class="banner__action">
+           <a href="#contact" class="btn btn--accent">Оценить перспективы</a>
+       </div>
+  </div>
+</section>
+
+
+<section class="section blog" id="blog">
+  <div class="container">
+      <div class="section-header text-center">
+          <h2 class="section-title split-text">Блог и инсайты</h2>
+          <p class="section-text mx-auto">Практики, применимые уже сегодня. Читайте последние статьи о карьерном росте.</p>
+      </div>
+
+      <div class="swiper blog-slider fade-up">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <article class="blog-card">
+                      <a href="#contact" class="blog-card__img-link">
+                          <img src="/obliq-zune/assets/seven-Dl_0hqe0.jpg" alt="Blog Post 1" class="blog-card__img">
+                      </a>
+                      <div class="blog-card__content">
+                          <span class="blog-card__date">15 Окт 2023</span>
+                          <h3 class="blog-card__title"><a href="#">Как AI меняет рынок труда в UK</a></h3>
+                          <p class="blog-card__excerpt">Анализ трендов и советы по адаптации к новым реалиям.</p>
+                          <a href="#contact" class="blog-card__read-more">Читать далее <i data-lucide="arrow-right"></i></a>
+                      </div>
+                  </article>
+              </div>
+               <div class="swiper-slide">
+                  <article class="blog-card">
+                      <a href="#contact" class="blog-card__img-link">
+                          <img src="/obliq-zune/assets/eight-LYXBbcWh.jpg" alt="Blog Post 2" class="blog-card__img">
+                      </a>
+                      <div class="blog-card__content">
+                          <span class="blog-card__date">10 Окт 2023</span>
+                          <h3 class="blog-card__title"><a href="#">Стратегии пассивного дохода для профи</a></h3>
+                          <p class="blog-card__excerpt">Как использовать свои навыки для создания дополнительных источников дохода.</p>
+                          <a href="#contact" class="blog-card__read-more">Читать далее <i data-lucide="arrow-right"></i></a>
+                      </div>
+                  </article>
+              </div>
+               <div class="swiper-slide">
+                  <article class="blog-card">
+                      <a href="#contact" class="blog-card__img-link">
+                          <img src="/obliq-zune/assets/nine-CaVuhK4U.jpg" alt="Blog Post 3" class="blog-card__img">
+                      </a>
+                      <div class="blog-card__content">
+                          <span class="blog-card__date">05 Окт 2023</span>
+                          <h3 class="blog-card__title"><a href="#">Личный бренд как инструмент роста</a></h3>
+                          <p class="blog-card__excerpt">Пошаговое руководство по созданию сильного личного бренда в Европе.</p>
+                          <a href="#contact" class="blog-card__read-more">Читать далее <i data-lucide="arrow-right"></i></a>
+                      </div>
+                  </article>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container contact__container">
+      <div class="contact__info fade-up">
+          <h2 class="section-title">Начать сейчас</h2>
+          <p class="section-text">Заполните форму ниже, чтобы получить бесплатную консультацию и доступ к платформе. Наши эксперты свяжутся с вами.</p>
+
+          <div class="contact__details">
+              <div class="contact__item">
+                   <i data-lucide="mail"></i>
+                   <div>
+                       <h4>Email</h4>
+                       <p>hello@obliq-zune.org</p>
+                   </div>
+              </div>
+              <div class="contact__item">
+                  <i data-lucide="phone"></i>
+                  <div>
+                      <h4>Телефон</h4>
+                      <p>+49 30 12345678</p>
+                  </div>
+             </div>
+          </div>
+      </div>
+
+      <div class="contact__form-wrapper fade-up" data-delay="0.2">
+          <form id="contact-form" class="form" novalidate>
+              <div class="form__group">
+                  <label for="name" class="form__label">Ваше имя *</label>
+                  <input type="text" id="name" name="name" class="form__input" required placeholder="Иван Иванов">
+                  <span class="form__error">Пожалуйста, введите имя</span>
+              </div>
+
+              <div class="form__group">
+                  <label for="email" class="form__label">Email *</label>
+                  <input type="email" id="email" name="email" class="form__input" required placeholder="example@mail.com">
+                   <span class="form__error">Пожалуйста, введите корректный email</span>
+              </div>
+
+              <div class="form__group">
+                  <label for="phone" class="form__label">Телефон (только цифры) *</label>
+                  <input type="tel" id="phone" name="phone" class="form__input" required placeholder="493012345678" pattern="[0-9]+">
+                   <span class="form__error">Разрешены только цифры</span>
+              </div>
+
+              <div class="form__group captcha-group">
+                  <label for="captcha" class="form__label" id="captcha-label">Сколько будет 3 + 5? *</label>
+                  <input type="text" id="captcha" name="captcha" class="form__input captcha-input" required>
+                   <span class="form__error">Неверный ответ</span>
+              </div>
+
+              <div class="form__group form__group--checkbox">
+                  <label class="checkbox-container">
+                      <input type="checkbox" required id="agreement">
+                      <span class="checkmark"></span>
+                      <span class="checkbox-text">Я согласен с <a href="./privacy.html" target="_blank">Политикой конфиденциальности</a> *</span>
+                  </label>
+                  <span class="form__error checkbox-error">Требуется согласие</span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--submit">
+                  <span class="btn__text">Отправить заявку</span>
+                  <i data-lucide="loader-2" class="btn__loader"></i>
+              </button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+<div class="popup-overlay" id="success-popup">
+  <div class="popup">
+      <button class="popup__close" id="close-popup"><i data-lucide="x"></i></button>
+      <div class="popup__icon">
+          <i data-lucide="check-circle"></i>
+      </div>
+      <h3 class="popup__title">Успешно отправлено!</h3>
+      <p class="popup__text">Спасибо за вашу заявку. Наш менеджер свяжется с вами в ближайшее время.</p>
+  </div>
+</div>
+
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__col">
+          <a href="/" class="logo logo--footer">
+              Obliq<span class="logo__accent">-Zune</span>
+          </a>
+          <p class="footer__desc">
+              Платформа года для тех, кто хочет построить карьеру, которая работает на вас. Инновационная технология роста.
+          </p>
+          <nav class="footer__nav">
+              <a href="#strategy" class="footer__link">Стратегия</a>
+              <a href="#innovations" class="footer__link">Инновации</a>
+              <a href="#blog" class="footer__link">Блог</a>
+          </nav>
+      </div>
+
+      <div class="footer__col footer__col--info">
+          <div class="footer__group">
+              <h3 class="footer__title">Юридическая информация</h3>
+              <ul class="footer__legal">
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+<li><a href="cookies.html">Политика использования файлов cookie</a></li>
+<li><a href="terms.html">Условия использования</a></li>
+<li><a href="return.html">Политика возврата</a></li>
+<li><a href="disclaimer.html">Отказ от ответственности</a></li>
+<li><a href="personal-data-policy.html">Политика обработки персональных данных</a></li>
+
+              </ul>
+          </div>
+
+          <div class="footer__group">
+              <h3 class="footer__title">Контакты</h3>
+              <address class="footer__contacts">
+                  <p class="footer__contact-item">
+                      <i data-lucide="map-pin"></i>
+                      45 Oxford Street, London W1D 2DZ, UK
+                  </p>
+                  <p class="footer__contact-item">
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+442079460123">+44 20 7946 0123</a>
+                  </p>
+                  <p class="footer__contact-item">
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@obliq-zune.org">hello@obliq-zune.org</a>
+                  </p>
+              </address>
+          </div>
+      </div>
+  </div>
+  <div class="footer__bottom">
+      <div class="container">
+          <p>&copy; 2025 Obliq-Zune. All rights reserved.</p>
+      </div>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="accept-cookies">Принять</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/split-type"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
 
+    <script>
+        lucide.createIcons();
+    </script>
 
   </body>
 </html>
